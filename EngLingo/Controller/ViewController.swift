@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     
-    @IBOutlet weak var choice1: UIButton!
-    @IBOutlet weak var choice2: UIButton!
-    @IBOutlet weak var choice3: UIButton!
+    @IBOutlet weak var Choice1: UIButton!
+    @IBOutlet weak var Choice2: UIButton!
+    @IBOutlet weak var Choice3: UIButton!
     
     var quizManager = QuizManager()
     
@@ -47,18 +47,18 @@ class ViewController: UIViewController {
         questionLabel.text = quizManager.getQuestionText()
         
         let answers = quizManager.getAnswer()
-        choice1.setTitle(answers[0], for: .normal)
-        choice1.setTitle(answers[1], for: .normal)
-        choice1.setTitle(answers[2], for: .normal)
+        Choice1.setTitle(answers[0], for: .normal)
+        Choice2.setTitle(answers[1], for: .normal)
+        Choice3.setTitle(answers[2], for: .normal)
         image.image = quizManager.getPhoto()
         
         
         progressBar.progress = quizManager.getProgress()
         scoreLabel.text = "Your Score is: \(quizManager.getScore())"
         
-        choice1.backgroundColor = UIColor.systemGreen
-        choice2.backgroundColor = UIColor.systemGreen
-        choice3.backgroundColor = UIColor.systemGreen
+        Choice1.backgroundColor = UIColor.systemGreen
+        Choice2.backgroundColor = UIColor.systemGreen
+        Choice3.backgroundColor = UIColor.systemGreen
     }
     
 }

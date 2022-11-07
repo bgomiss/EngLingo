@@ -37,7 +37,7 @@ struct QuizManager {
     }
     
     func getAnswer() -> [String] {
-        return quizArray.map { $0.text }
+        return quizArray[questionNumber].answers
     }
     
     mutating func checkAnswer(_ userAnswer: String) -> Bool {

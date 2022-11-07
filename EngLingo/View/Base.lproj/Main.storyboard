@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="ej1-gW-HaH">
-                                <rect key="frame" x="0.0" y="55" width="390" height="751"/>
+                                <rect key="frame" x="0.0" y="55" width="390" height="755"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6y2-C6-Xij">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
@@ -28,8 +28,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcH-LB-nvv">
-                                        <rect key="frame" x="0.0" y="61" width="390" height="206"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SPW-cl-4mL">
+                                        <rect key="frame" x="0.0" y="61" width="390" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="iS0-t5-8Yl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcH-LB-nvv">
+                                        <rect key="frame" x="0.0" y="232" width="390" height="206"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="206" id="jsc-C3-GNR"/>
                                         </constraints>
@@ -37,12 +43,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SPW-cl-4mL">
-                                        <rect key="frame" x="0.0" y="288" width="390" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="iS0-t5-8Yl"/>
-                                        </constraints>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-b1-lyA">
                                         <rect key="frame" x="0.0" y="459" width="390" height="75"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -86,7 +86,7 @@
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b1l-bw-PVi">
-                                        <rect key="frame" x="0.0" y="747" width="390" height="4"/>
+                                        <rect key="frame" x="0.0" y="747" width="390" height="8"/>
                                     </progressView>
                                 </subviews>
                             </stackView>
@@ -94,8 +94,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ej1-gW-HaH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oSY-It-Ljk"/>
-                            <constraint firstItem="ej1-gW-HaH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="xXE-qv-39H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ej1-gW-HaH" secondAttribute="bottom" id="8eZ-sR-pUm"/>
+                            <constraint firstItem="ej1-gW-HaH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oSY-It-Ljk" userLabel="Stack View.leading = leadingMargin"/>
+                            <constraint firstItem="ej1-gW-HaH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="u9e-MR-ecU" userLabel="trailingMargin = Stack View.trailing"/>
+                            <constraint firstItem="ej1-gW-HaH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="xXE-qv-39H" userLabel="Stack View.top = Safe Area.top"/>
                         </constraints>
                     </view>
                     <connections>
