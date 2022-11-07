@@ -55,9 +55,10 @@ class ViewController: UIViewController {
         
         progressBar.progress = quizManager.getProgress()
         scoreLabel.text = "Your Score is: \(quizManager.getScore())"
-        choice1.backgroundColor = UIColor.clear
-        choice2.backgroundColor = UIColor.clear
-        choice3.backgroundColor = UIColor.clear
+        
+        choice1.backgroundColor = UIColor.systemGreen
+        choice2.backgroundColor = UIColor.systemGreen
+        choice3.backgroundColor = UIColor.systemGreen
     }
     
 }
