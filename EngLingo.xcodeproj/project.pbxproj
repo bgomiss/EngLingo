@@ -45,8 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				1C2B27FC29182F950021F201 /* EngLingo */,
-				1C2B281329182FCF0021F201 /* View */,
-				1C2B281429182FD80021F201 /* Controller */,
 				1C2B27FB29182F950021F201 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,18 +65,20 @@
 				1C2B280829182F960021F201 /* LaunchScreen.storyboard */,
 				1C2B280629182F960021F201 /* Assets.xcassets */,
 				1C2B280B29182F960021F201 /* Info.plist */,
-				1C2B281229182FC60021F201 /* model */,
+				1C2B281429182FD80021F201 /* Controller */,
+				1C2B281329182FCF0021F201 /* View */,
+				1C2B281229182FC60021F201 /* Model */,
 			);
 			path = EngLingo;
 			sourceTree = "<group>";
 		};
-		1C2B281229182FC60021F201 /* model */ = {
+		1C2B281229182FC60021F201 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				1C2B28152918304C0021F201 /* Quiz.swift */,
 				1C2B28172918306B0021F201 /* QuizManager.swift */,
 			);
-			path = model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1C2B281329182FCF0021F201 /* View */ = {
