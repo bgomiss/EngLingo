@@ -11,18 +11,18 @@ import UIKit
 struct QuizManager {
     
     let quizArray = [
-        Quiz(q: "1. We ________ finished eating dinner.", a: ["had not", "not had", "'d had not"], correctAnswer: "had not", photo: UIImage(systemName: "sun.min")!),
-        Quiz(q: "2. Had they _____ to her before?", a: ["spoke", "spoken", "spoked"], correctAnswer: "spoken", photo: UIImage(systemName: "sun.min")!),
-        Quiz(q: "3. You _____ not left yet.", a: ["would", "'d", "would had"], correctAnswer: "'d", photo: UIImage(systemName: "sun.min")!),
-        Quiz(q: "4. I had never _____ her before.", a: ["see", "saw", "seen"], correctAnswer: "seen", photo: UIImage(systemName: "sun.min")!),
-        Quiz(q: "5. We arrived at 8:05, but the train _____ already left.", a: ["has", "have", "had"], correctAnswer: "had", photo: UIImage(systemName: "sun.min")!),
-        Quiz(q: "6. Sarah thought she ________ to that zoo before.", a: ["has been", "had be", "had been"], correctAnswer: "had been", photo: UIImage(systemName: "sun.min")!),
+        Quiz(q: "1. We ________ finished eating dinner.", a: ["had not", "not had", "'d had not"], correctAnswer: "had not", photo: UIImage(named: "dinner")!),
+        Quiz(q: "2. Had they _____ to her before?", a: ["spoke", "spoken", "spoked"], correctAnswer: "spoken", photo: UIImage(named: "speaking")!),
+        Quiz(q: "3. You _____ not left yet.", a: ["would", "'d", "would had"], correctAnswer: "'d", photo: UIImage(named: "leave")!),
+        Quiz(q: "4. I had never _____ her before.", a: ["see", "saw", "seen"], correctAnswer: "seen", photo: UIImage(named: "see")!),
+        Quiz(q: "5. We arrived at 8:05, but the train _____ already left.", a: ["has", "have", "had"], correctAnswer: "had", photo: UIImage(named: "train")!),
+        Quiz(q: "6. Sarah thought she ________ to that zoo before.", a: ["has been", "had be", "had been"], correctAnswer: "had been", photo: UIImage(named: "zoo")!),
     
-        Quiz(q: "7. Nobody explained why the project had ________ on time.", a: ["n't been completed", "not completed", "n't complete"], correctAnswer: "n't been completed", photo: UIImage(systemName: "sun.min")!),
+        Quiz(q: "7. Nobody explained why the project had ________ on time.", a: ["n't been completed", "not completed", "n't complete"], correctAnswer: "n't been completed", photo: UIImage(named: "project")!),
     
-        Quiz(q: "8. He _____ us the item had been shipped.", a: ["told", "say", "asked"], correctAnswer: "told", photo: UIImage(systemName: "sun.min")!),
-        Quiz(q: "9. Dad explained ________ his job due to stress.", a: ["why he quitted", "that he had quit", "that he'd quit"], correctAnswer: "that he had quit", photo: UIImage(systemName: "sun.min")!),
-        Quiz(q: "10. Where _____ the security guard gone?", a: ["had", "have", "did"], correctAnswer: "had", photo: UIImage(systemName: "sun.min")!),
+        Quiz(q: "8. He _____ us the item had been shipped.", a: ["told", "say", "asked"], correctAnswer: "told", photo: UIImage(named: "shipping")!),
+        Quiz(q: "9. Dad explained ________ his job due to stress.", a: ["why he quitted", "that he had quit", "that he'd quit"], correctAnswer: "that he had quit", photo: UIImage(named: "job")!),
+        Quiz(q: "10. Where _____ the security guard gone?", a: ["had", "have", "did"], correctAnswer: "had", photo: UIImage(named: "security")!),
     ]
     
     var questionNumber = 0

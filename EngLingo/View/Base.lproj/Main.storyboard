@@ -35,16 +35,16 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcH-LB-nvv">
-                                        <rect key="frame" x="0.0" y="232" width="390" height="206"/>
+                                        <rect key="frame" x="0.0" y="232" width="390" height="175"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="206" id="jsc-C3-GNR"/>
+                                            <constraint firstAttribute="height" constant="175" id="jsc-C3-GNR" userLabel="height = 175"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-b1-lyA">
-                                        <rect key="frame" x="0.0" y="459" width="390" height="75"/>
+                                        <rect key="frame" x="0.0" y="428" width="390" height="75"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="JIU-SV-r5M"/>
@@ -58,7 +58,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Baw-i6-93S">
-                                        <rect key="frame" x="0.0" y="555" width="390" height="75"/>
+                                        <rect key="frame" x="0.0" y="524" width="390" height="75"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="S0P-wd-R2w"/>
@@ -72,7 +72,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ya0-CZ-Ohh">
-                                        <rect key="frame" x="0.0" y="651" width="390" height="75"/>
+                                        <rect key="frame" x="0.0" y="620" width="390" height="75"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="pQR-wb-dGx"/>
@@ -86,7 +86,7 @@
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b1l-bw-PVi">
-                                        <rect key="frame" x="0.0" y="747" width="390" height="8"/>
+                                        <rect key="frame" x="0.0" y="716" width="390" height="39"/>
                                     </progressView>
                                 </subviews>
                             </stackView>
